@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Canada</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1"></script>
+  </head>  
+<body>
+  <nav>
+    <div class="nav-center">
+      <div class="nav-header">
+
+        <i class="fas fa-plane-departure"></i>
+      </div>
+        <img src="https://i.imgur.com/KTKpVmK.png" alt="Air Canada Logo" class="logo" style="width: 150px;" />
+       
+      <!-- all the buttons-->
+      <button id="changeColorScheme">Change Color Of Website!</button>
+      <button id="employeeBtn">Employee Statements</button>
+      <button id="specialBtn">Special Button</button>
+      <ul class="links">
+        <button id="likeBtn">Like +1</button>
+        <button id="dislikeBtn">Dislike -1</button>
+        <button id="resetBtn">Reset</button>
+        <div id="counter">0</div>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="employee-section">
+    <div id="employeeInfo" class="employee-container">
+      <div class="img-container">
+        <img src="" id="person-img" alt="" />
+      </div>
+      <div class="text-container">
+        <h4 id="author"></h4>
+        <p id="job"></p>
+        <p id="info" class="employee-info"></p>
+        <div class="button-container">
+          <button class="start-btn" onclick="showStartEmployee()">
+            Start
+          </button>
+          <button class="prev-btn" onclick="showPrevEmployee()">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="next-btn" onclick="showNextEmployee()">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button class="end-btn" onclick="showEndEmployee()">
+            End
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recruitment-section">
+    <div class="box-container">
+      <p class="title">We Are Hiring!</p>
+      <img src="https://cabincrewhq.com/wp-content/uploads/2022/05/air-canada-poster-flight-attendants-walk-696x438.jpg"  class="recruitment-image">
+      <p>We are currently looking for a employees who would want to work for Air Canada. !</p>
+     </div>
+  </section>
+
+  <section class="why-work-section">
+    <div class="box-container horizontal"> 
+      
+      <p class="title">Why Work With Us?</p>
+      <img src="https://th.bing.com/th/id/R.e3efc5f4d3c5f6a21037ea3b29537004?rik=t6c5FKV%2fbkn1HQ&pid=ImgRaw&r=0">
+     
+      
+      <p>Air Canada is one of the largest air lines in Canada! We provide an amazing work environment with benefits too! Get to meet some of our workers in the "Employee Staments"! We support our employees needs and making them feel welcomed. We all work together to make Air Canada better!</p>
+    </div>
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
